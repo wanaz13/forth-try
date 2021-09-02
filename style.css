@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--Dark-cyan);
+    /* background-image: url(images/bg-pattern-top.svg); */
+    background-image: url(images/bg-pattern-top.svg), url("images/bg-pattern-bottom.svg");
+    background-position: -90% -500px, 170% 400px;
+    background-repeat: no-repeat;
+    /* background: hsl(185, 75%, 39%); */
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: block;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    /* position: absolute; */
+    background-color: white;
+    border-radius: 2em;
+    margin: 6em auto;
+    margin-top: 8em;
+    box-shadow: 0px 1px 30px 1px var(--Dark-grayish-blue);
+}
+
+.upper-container {
+    height: 150px;
+    /* background-color: lightblue; */
+    background-image: url("images/bg-pattern-card.svg");
+}
+
+.upper-container img {
+    border-radius: 50%;
+    border: 5px solid white;
+    /* width: 50%; */
+    /* transform: translate(140%, 100%); */
+    transform: translate(150px, 100px);
+}
+
+h2 {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h2 span {
+    color: var(--Dark-grayish-blue);
+    padding-left: 3px;
+}
+
+h2 ul {
+    margin-top: 7px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--Dark-grayish-blue);
+    padding-inline-start: unset;
+}
+
+.mini {
+    border-top: 1px solid var(--Dark-grayish-blue);
+    display: flex;
+    margin-top: 32px;
+}
+
+.mini h2 {
+    text-align: center;
+    border: unset;
+    font-size: 20px;
+    padding: 0.3em 1.5em;
+    font-weight: 700;
+}
+
+.mini h2 span {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 400px) {
+    .upper-container img {
+        transform: translate(130px, 100px);
+    }
+}
